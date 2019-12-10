@@ -10,17 +10,10 @@
  * Method Chaining
  */
 
- // map ()
+ // reduce ()
 
- const prices = [20, 10, 30, 25, 15, 40, 80, 5];
+const prices = [20, 10, 15, 25, 30, 40, 80, 5];
 
- const blackFridayPrices = prices.map(price => price / 2); // förkortad funktion när det endast är en parementer. 
-    //let newPrice = price / 2; 
-    //return newPrice;
-
- console.log('Black friday prices is', blackFridayPrices);
-
-
-
-
-
+const totalValue = prices.reduce(function(sum, price){
+    return sum + price;
+}, 0); //startvärdet. Denna ändras varje gång vi itererat. 
