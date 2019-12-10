@@ -10,10 +10,15 @@
  * Method Chaining
  */
 
- // reduce ()
+ // sort ()
 
-const prices = [20, 10, 15, 25, 30, 40, 80, 5];
+ const catnames = [
+     'Picatso',
+     'William',
+     'Mega-Bite',
+     'Chairwoman',
+     'C.A.T',
+ ];
 
-const totalValue = prices.reduce(function(sum, price){
-    return sum + price;
-}, 0); //startvärdet. Denna ändras varje gång vi itererat. 
+ catnames.sort();
+ 
